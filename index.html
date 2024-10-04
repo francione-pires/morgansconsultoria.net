@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morgans Consultoria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #F2F2F2, #BFBFBF);
+            color: #404040;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #404040;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        .service-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 90%;
+            margin-top: 20px;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+            height: auto; /* Altura automática para melhor adaptação */
+        }
+
+        .service-card h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #404040;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-card li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .service-card li i {
+            margin-right: 10px;
+            color: #737373;
+        }
+
+        .footer-button {
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #404040;
+            text-align: center;
+            font-size: 1em;
+            transition: background-color 0.3s;
+            margin-top: auto; /* Faz com que o botão fique na parte inferior do card */
+            width: fit-content;
+        }
+
+        .footer-button:hover {
+            background-color: #333;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .whatsapp-button, .instagram-button {
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            transition: background-color 0.3s;
+            width: 200px;
+        }
+
+        .whatsapp-button {
+            background-color: #25D366;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+
+        .instagram-button {
+            background-color: #E1306C;
+        }
+
+        .instagram-button:hover {
+            background-color: #C13584;
+        }
+
+        .trust-seals {
+            max-width: 200px;
+            margin-top: 20px;
+        }
+
+        .trust-seal {
+            max-width: 100%;
+        }
+
+        .about-section {
+            max-width: 800px;
+            margin: 30px auto;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        /* Estilo específico para o card de Contabilidade para MEI */
+        .mei-services {
+            display: flex;
+            flex-wrap: wrap; /* Permite que os serviços se organizem em colunas */
+            justify-content: space-between;
+        }
+
+        .mei-services li {
+            width: 48%; /* Quase 50% para duas colunas */
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .service-container {
+                grid-template-columns: 1fr;
+            }
+
+            .logo {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://i.ibb.co/jgGn0KD/v-1.png" alt="Logotipo Morgans Consultoria" class="logo">
+
+    <h1>Morgans Consultoria</h1>
+
+    <div class="service-container">
+        <div class="service-card">
+            <h3>Contabilidade para MEI (R$ 80,00) - Mensal</h3>
+            <ul class="mei-services">
+                <li><i class="fas fa-hand-holding-usd"></i> Solicitação de Benefícios</li>
+                <li><i class="fas fa-calendar-check"></i> Declaração Anual do MEI</li>
+                <li><i class="fas fa-receipt"></i> Emissão de NF de Serviço (Limite de 20 Notas/Mês)</li>
+                <li><i class="fas fa-file-signature"></i> Contratos personalizados para cada tipo de serviço prestado</li>
+                <li><i class="fas fa-tasks"></i> Emissão de Ordem de Serviço</li>
+                <li><i class="fas fa-file-invoice"></i> Relatórios Financeiros</li>
+                <li><i class="fas fa-user-plus"></i> Contratação de Funcionário</li>
+                <li><i class="fas fa-chart-line"></i> Gestão de Receitas e Despesas</li>
+            </ul>
+            <a href="https://wa.me/5511936190518?text=Olá%20Morgans,%20gostaria%20de%20entender%20melhor%20o%20serviço%20Contabilidade%20para%20MEI." class="footer-button">Contratar</a>
+        </div>
+        <div class="service-card">
+            <h3>ABERTURA DE CNPJ (MEI) (R$ 90,00)</h3>
+            <ul>
+                <li><i class="fas fa-door-open"></i> Abertura do MEI</li>
+                <li><i class="fas fa-chart-pie"></i> Enquadramento na atividade econômica</li>
+                <li><i class="fas fa-certificate"></i> Emissão do Certificado de Condição de Microempreendedor Individual (CCMEI)</li>
+            </ul>
+            <a href="https://wa.me/5511936190518?text=Olá%20Morgans,%20gostaria%20de%20entender%20melhor%20o%20serviço%20ABERTURA%20DE%20CNPJ%20(MEI)." class="footer-button">Contratar</a>
+        </div>
+        <div class="service-card">
+            <h3>REGULARIZAÇÃO (R$ 135,00) - Pagamento Único</h3>
+            <ul>
+                <li><i class="fas fa-exclamation-triangle"></i> Análise de Pendências</li>
+                <li><i class="fas fa-handshake"></i> Parcelamento de Dívida</li>
+                <li><i class="fas fa-user-shield"></i> Acompanhamento e suporte durante quitação</li>
+                <li><i class="fas fa-calendar-check"></i> Emissão das parcelas de acordo</li>
+            </ul>
+            <a href="https://wa.me/5511936190518?text=Olá%20Morgans,%20gostaria%20de%20entender%20melhor%20o%20serviço%20REGULARIZAÇÃO." class="footer-button">Contratar</a>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="https://wa.me/5511936190518" class="whatsapp-button">Contato via WhatsApp</a>
+        <a href="https://www.instagram.com/morgans_consultoria?igsh=ejM5amZzc2J2bGg%3D&utm_source=qr" class="instagram-button">Siga no Instagram</a>
+    </div>
+
+    <div class="about-section">
+        <h2>Sobre Nós</h2>
+        <p>A Morgans Consultoria é especializada em oferecer soluções contábeis para Microempreendedores Individuais (MEI). Nossa missão é descomplicar a contabilidade, proporcionando um serviço de qualidade que atenda às necessidades do seu negócio.</p>
+    </div>
+
+    <div class="trust-seals">
+        <img src="https://edifier.com.br/pub/media/wysiwyg/Edifier/google_site_seguro.png" alt="Selo de Confiança" class="trust-seal">
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Morgans Consultoria. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
